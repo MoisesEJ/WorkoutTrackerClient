@@ -1,0 +1,132 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var();
+}
+
+header h1 {
+  padding: 0 15px;
+  color: var(--text)
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 15px;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.75em;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.user span {
+  padding: 0 15px;
+}
+
+.nav:hover nav > .menu {
+  display: flex;
+  border-radius: 5px 0 5px 5px;
+}
+
+.nav:hover {
+  border-radius: 15px 15px 0 0;
+  background-color: var(--bg);
+}
+
+.menu {
+  background-color: var(--bg);
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.25em;
+  list-style: none;
+}
+
+.menu li{
+  margin: 5px 0;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  border-bottom: 2px solid var(--bg-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu li:hover {
+  background-color: var(--bg-light);
+  border-radius: 5px;
+}
+
+.menu li:last-child {
+  border-bottom: 0;
+}
+
+.menu button {
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 10px;
+  font-size: inherit;
+  border-radius: 5px;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login a {
+  padding: 10px;
+  border: 2px solid var(--bg-light);
+  background-color: var(--bg-light);
+  margin: 10px;
+  width: 75px;
+  text-align: center;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+
+.login a:last-child {
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+main {
+  position: relative;
+  margin-top: 75px;
+}
+
+.notfound {
+  text-align: center;
+  padding: 15px;
+}
+
+.notfound button {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+}

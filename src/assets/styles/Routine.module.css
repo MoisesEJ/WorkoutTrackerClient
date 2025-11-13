@@ -1,0 +1,247 @@
+.formBG {
+  position: fixed;
+  width: 100vw;
+  height: 150vh;
+  top: -75px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 200;
+}
+
+.formBG > div {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.dialog {
+  background-color: var(--bg);
+  padding: 25px;
+  border-radius: 25px;
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5em;
+  position: relative;
+  z-index: 200;
+}
+
+.dialog > button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px;
+  background-color: var(--error);
+  height: 60px;
+  width: 60px;
+  border-radius: 15px;
+  font-size: .75em;
+}
+
+.dialog > p {
+  margin: 15px 0;
+}
+
+.dialog > div {
+  padding: 15px;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.dialog > div p {
+  color: var(--error);
+}
+
+.form {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 200;
+}
+
+.form label > input {
+  width: 250px;
+  height: 20px;
+  background-color: var(--bg-light);
+  padding: 15px;
+  border-radius: 50px;
+  font-size: .75em;
+  margin: 15px;
+}
+
+.form input:disabled {
+  background-color: transparent;
+  font-size: 1.15em;
+}
+
+.form label {
+  font-weight: bold;
+}
+
+.form button {
+  margin: 25px 15px;
+  border-radius: 15px;
+  background-color: var(--create);
+  padding: 15px;
+  font-size: .75em;
+}
+
+.form button:last-child {
+  background-color: var(--error);
+}
+
+.formDelete button {
+  margin: 25px 15px;
+  border-radius: 15px;
+  background-color: var(--error);
+  padding: 15px;
+  font-size: .75em;
+}
+
+.formDelete button:last-child {
+  background-color: var(--create);
+}
+
+.table {
+  width: 100%;
+  height: 600px;
+  min-height: 20vh;
+  max-height: 40vh;
+  font-size: .5em;
+  border: 2px solid var(--bg-light);
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.table th {
+  border-bottom: 2px solid var(--bg-light);
+  font-size: 1.25em;
+  padding: 5px;
+}
+
+.table tbody {
+  margin: 5px;
+}
+
+.table td > div {
+  overflow: hidden;
+  overflow-y: visible;
+  width: 100%;
+  height: 100%;
+}
+
+.exercise {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  width: 100%;
+}
+
+.exercise label {
+  width: 100%;
+  text-align: center;
+  background-color: var(--bg-light);
+  border-radius: 15px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.exercise label p {
+  padding: 5px 0;
+  border-bottom: 2px solid var(--bg);
+}
+
+.exercise label p:last-child {
+  border: 0;
+}
+
+.exercise input {
+  appearance: none;
+}
+
+.exercise > input:checked + label {
+  background-color: var(--primary-color);
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--bg);
+}
+
+.title h3 {
+  font-size: 1.5em;
+}
+
+.titleDelete button {
+  margin: 10px 5px;
+  border-radius: 5px;
+  background-color: var(--create);
+  padding: 5px;
+  font-size: .75em;
+}
+
+.titleDelete button:last-child {
+  background-color: var(--error);
+}
+
+.routine {
+  padding: 15px;
+  border: 2px solid var(--bg);
+  margin: 15px 0;
+}
+
+.routineTable {
+  width: 100%;
+  border: 2px solid var(--bg);
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.routineTable th {
+  width: 14%;
+  border-bottom: 2px solid var(--bg);
+}
+
+.tableRoutine td > div {
+  overflow: hidden;
+  overflow-y: visible;
+  width: 100%;
+  height: 100%;
+}
+
+.noExercise {
+  text-align: center;
+}
+
+.noExercise p {
+  font-size: 1.125em;
+}
+
+.noExercise button {
+  padding: 5px;
+  margin: 5px;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+.error {
+  padding: 15px;
+  margin: 0 25px;
+  border-radius: 15px;
+  background-color: var(--error);
+}
+
+.error p {
+  font-size: 1.25em;
+  color: var(--delete);
+}

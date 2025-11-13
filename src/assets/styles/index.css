@@ -1,0 +1,68 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --bg-dark: #171717;
+  --bg: #262626;
+  --bg-light: #404040;
+  --text: #fafafa;
+  --text-muted: #e5e5e5;
+  --delete: #82181a;
+  --create: #016630;
+  --edit: #A1A1A1;
+  --primary-color: #188280;
+  --secondary-color: #126362;
+  --error: #df4e51;
+}
+
+[data-theme='light'] {
+  --bg-dark: #fafafa;
+  --bg: #e5e5e5;
+  --bg-light: #d4d4d4;
+  --text: #171717;
+  --text-muted: #404040;
+  --delete: #82181a;
+  --create: #016630;
+  --edit: #A1A1A1;
+  --primary-color: #188280;
+  --secondary-color: #126362;
+  --error: #df4e51;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  text-decoration: none;
+  color: var(--text)
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--bg-dark);
+}
+
+a {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--bg-light);
+  border-radius: 50px;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}

@@ -1,0 +1,20 @@
+.exercise {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 15px;
+}
+
+.exercise p {
+  text-align: center;
+  padding: 5px;
+  border-bottom: 2px solid var(--bg-dark);
+}
+
+.exercise p:last-child {
+  border: 0;
+}
